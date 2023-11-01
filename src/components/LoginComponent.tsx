@@ -1,6 +1,6 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 
-export default function LoginComponents() {
+export default function LoginComponent() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -13,16 +13,13 @@ export default function LoginComponents() {
         })
         const data = await res.json();
         console.log(data);
-        
     }
 
   return (
     <div>
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>
-            {email}
             <input type="text" placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/>
-            {password}
             <button type='submit'>Login</button>
         </form>
     </div>

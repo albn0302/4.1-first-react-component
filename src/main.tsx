@@ -9,6 +9,7 @@ import ProductCards from './components/ProductCards.tsx'
 import Index from './pages/Index.tsx'
 import Shop from './pages/Shop.tsx'
 import Login from './pages/Login.tsx'
+import Register from './pages/Register.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
       </Routes>
       <App />
     </Layout>
